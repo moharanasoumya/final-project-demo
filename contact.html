@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BaliYatra | Contact</title>
+	<script>
+		function hideshow()
+		{
+			//alert("hello");
+			var x,y;
+			x=document.getElementById('passid');
+			y=x.getAttribute('type');
+			z=document.getElementById('imgid');
+			//alert(y);
+			if(y=='password')
+			{
+			x.setAttribute('type','text');
+			z.setAttribute('src','asset/images/eye_close.png');
+			}
+			else
+			{
+			x.setAttribute('type','password');
+			z.setAttribute('src','asset/images/eye_open.png');
+			}
+		}
+		function form()
+		{
+			alert("Successfully Submitted...!!!");
+		}
+		</script>
+	<link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"><!------ for bootstrap icons------------>
+  </head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mt-4">
+					<nav class="navbar bg-dark">
+					  <div class="container">
+						<a class="navbar-brand" href="index.html">
+						  <img src="asset/images/baliyatra.png" alt="BaliYatra" width="100" height="50">
+						</a>
+						<nav class="navbar navbar-expand-lg bg-light text-white">
+						  <div class="container-fluid">	
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+							  <span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+							  <div class="navbar-nav">
+								<a class="nav-link" href="index.html">Home</a>
+								<a class="nav-link" href="about.html">About Us</a>
+								<a class="nav-link" href="photos.html">Photo Gallery</a>
+								<a class="nav-link" href="contact.html">Contact Us</a>
+							  </div>
+							</div>
+						  </div>
+						</nav>
+						<a class="btn btn-primary" href="#" role="button">Sign-In</a>
+						<a class="btn btn-primary" href="#" role="button">Register Youeself	</a>
+						<form class="d-flex" role="search">
+						  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						  <button class="btn btn-outline-success" type="submit">Search</button>
+						</form>
+					  </div> 
+					</nav>
+				</div><!------ menu bar end / header ends------------------->
+				
+				
+					<div class="col-md-6 mt-4 box bg-light">
+					<h4>Sign-In Form</h4>
+					<hr>
+						<form>
+						  <div class="mb-3">
+							<label for="exampleInputEmail1" class="form-label">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							<!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+						  </div>
+						  <div class="mb-3">
+							<label for="exampleInputPassword1" class="form-label">Password</label>
+							<input type="password" class="form-control" id="passid">
+							<img src="asset/images/eye_open.png" onclick="hideshow()" 
+							id="imgid" alt="" width="18px" height="20px"/>
+						  </div>
+						  <div class="mb-3 form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">Check me out</label>
+						  </div>
+						  <button type="submit" class="btn btn-primary" >Sign-In</button>
+						</form>
+					</div>
+					<div class="col-md-6 mt-4 box bg-light">
+					<h4>Registration Form</h4>
+					<hr>
+						<!-- <div class="row"> -->
+						  <!-- <div class="col"> -->
+							<!-- <input type="text" class="form-control" placeholder="First name" aria-label="First name"> -->
+						  <!-- </div> -->
+						  <!-- <div class="col"> -->
+							<!-- <input type="text" class="form-control" placeholder="Last name" aria-label="Last name"> -->
+						  <!-- </div> -->
+						<!-- </div> -->
+						<form class="row g-3">
+						<div class="col-md-6">
+							<label for="name" class="form-label">First Name</label>
+							<input type="text" class="form-control" id="inputEmail4">
+						  </div>
+						  <div class="col-md-6">
+							<label for="name" class="form-label">Last Name</label>
+							<input type="text" class="form-control" id="inputPassword4" >
+						  </div>
+						  <div class="col-md-6">
+							<label for="inputEmail4" class="form-label">Email</label>
+							<input type="email" class="form-control" id="inputEmail4">
+						  </div>
+						  <div class="col-md-6">
+							<label for="inputPassword4" class="form-label">Password</label>
+							<input type="password" class="form-control" id="passid">
+							<img src="asset/images/eye_open.png" onclick="hideshow()" 
+							id="imgid" alt="" width="18px" height="20px"/>
+						  </div>
+						  <div class="col-12">
+							<label for="inputAddress" class="form-label">Mobile No.</label>
+							<input type="text" class="form-control" id="inputAddress" placeholder="0123456789" maxlength="10">
+						  </div>
+						  <div class="col-12">
+							<label for="inputAddress2" class="form-label">Address</label>
+							<input type="text" class="form-control" id="inputAddress2" placeholder="1234 Main St...">
+						  </div>
+						  <div class="col-md-6">
+							<label for="inputCity" class="form-label">City</label>
+							<input type="text" class="form-control" id="inputCity">
+						  </div>
+						  <div class="col-md-4">
+							<label for="inputState" class="form-label">State</label>
+							<select id="inputState" class="form-select">
+							  <option selected>Choose...</option>
+							  <option>Andhra Pradesh</option><option>Arunachal Pradesh</option><option>Assam</option><option>Bihar</option><option>Chhattisgarh</option>
+							  <option>Goa</option>
+							  <option>Gujarat</option>
+							  <option>Haryana</option>
+							  <option>Himachal Pradesh</option>
+							  <option>Jharkhand</option>
+							  <option>Karnataka</option>
+							  <option>Kerala</option>
+							  <option>Madhya Pradesh</option>
+							  <option>Maharashtra</option>
+							  <option>Manipur</option>
+							  <option>Meghalaya</option>
+							  <option>Mizoram</option>
+							  <option>Nagaland</option>
+							  <option>Odisha</option>
+							  <option>Punjab</option>
+							  <option>Rajasthan</option>
+							  <option>Sikkim</option>
+							  <option>Tamil Nadu</option>
+							  <option>Telangana</option>
+							  <option>Tripura</option>
+							  <option>Uttar Pradesh</option>
+							  <option>Uttarakhand</option>
+							  <option>West Bengal</option>
+							</select>
+						  </div>
+						  <div class="col-md-2">
+							<label for="inputZip" class="form-label">Pin</label>
+							<input type="text" class="form-control" id="inputZip">
+						  </div>
+						  <fieldset class="row mb-3">
+							<legend class="col-form-label col-sm-2 pt-0">Registration For</legend>
+							<div class="col-sm-10">
+							  <div class="form-check">
+								<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+								<label class="form-check-label" for="gridRadios1">
+								  Individual For Plot Allotment
+								</label>
+							  </div>
+							  <div class="form-check">
+								<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+								<label class="form-check-label" for="gridRadios2">
+								  Games For Plot Allotment
+								</label>
+							  </div>
+							  <div class="form-check">
+								<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+								<label class="form-check-label" for="gridRadios3">
+								  Cultural Program
+								</label>
+							  </div>
+							</div>
+						  </fieldset>
+						  <div class="col-12">
+							<div class="form-check">
+							  <input class="form-check-input" type="checkbox" id="gridCheck">
+							  <label class="form-check-label" for="gridCheck">
+								Check me out
+							  </label>
+							</div>
+						  </div>
+						  <div class="col-12">
+							<button type="submit" class="btn btn-primary" onclick="form()">Submit</button>
+						  </div>
+						</form>
+					</div>
+					
+					<div class="col-md-4 mt-4 box">
+					<img src="Asset/images/wp.jpg" alt="whatsaap1" width="45px" height="45px" id="aaa"/><br>
+					<a id="aa"href="http://api.whatsapp.com/send?phone=917978903574& text=Hi, i saw your website" >Let's chat With Us</a><br>
+					(+91) 7978-90-3574
+					</div>
+					<div class="col-md-4 mt-4 box">
+					<img src="Asset/images/call.png" width="45px" height="45px" id="aaa"><br>
+					<a id="aa"href="call:7978903574">Call Us</a><br>
+					(+91) 7978-90-3574
+					</div>
+					<div class="col-md-4 mt-4 box">
+					<img src="Asset/images/mail.png" width="45px" height="45px" id="aaa"><br>
+					<a id="aa"href="http://www.gmail.com">Mail Us</a><br>
+					baliyatra2022@gmail.com
+					</div>
+					
+					<div class="col-md-6 mt-4 box bg-light">
+					<h4>Find Us</h4><hr>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.5415153309855!2d85.86685607491303!3d20.48401598103257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a191272ae80d73b%3A0x7faee5bb4af07020!2zQmFsaWphdHJhIFVwcGFyIFBhZGlhIOCsrOCsvuCssuCsv-Csr-CsvuCspOCtjeCssOCsviDgrIngrKrgrLAg4Kyq4Kyh4Ky84Ky_4KyG!5e0!3m2!1sen!2sin!4v1669982120799!5m2!1sen!2sin" 
+					width="645" height="450" style="border:0;" 
+					allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="col-md-6 mt-4 box bg-light">
+					<h4>Send Feedback</h4><hr>
+						<form class="row g-3">
+							<div class="col-md-6">
+								<label for="name" class="form-label">First Name</label>
+								<input type="text" class="form-control" id="inputEmail4">
+							</div>
+							<div class="col-md-6">
+								<label for="name" class="form-label">Last Name</label>
+								<input type="text" class="form-control" id="inputPassword4" >
+							</div>
+							<div class="col-12">
+								<label for="inputAddress" class="form-label">Mobile No.</label>
+								<input type="text" class="form-control" id="inputAddress" placeholder="0123456789" maxlength="10">
+							</div>
+							<div class="col-md-12">
+								<label for="inputEmail4" class="form-label">Email</label>
+								<input type="email" class="form-control" id="inputEmail4">
+							</div>
+							<div class="col-12">
+								<label for="inputAddress2" class="form-label">Message</label>
+								<input type="text" class="form-control" id="inputAddress2" maxlength="250" placeholder="upto 250 Charecters...." >
+							</div>
+							<div id="emailHelp" class="form-text">We'll never share your Detals with anyone else.</div>
+							<div class="col-12">
+							<button type="submit" class="btn btn-primary" onclick="form()">Send</button>
+						  </div>
+						</form>	
+					</div>			
+<!-----------footer start------------>
+				<div class="col-md-4 mt-3 bg-dark text-white">
+						<br>
+						<h3>Contact us</h3>
+						<br>
+						<p>0671-2500100 (ofc.) 2300001 (Res)<br>
+						Fax: 0671- 2305503(res)<br>
+						Email: dm-cuttack@nic.in<br>
+						Contact for boking plots, promotions & advertisements<br>
+						7008337140 |
+						9438915771 |
+						8328938348
+						</p>
+						<br><br><br>
+						<p><a href="about.html" class="text-white" >Privacy</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="about.html" class="text-white" >Terms Of Use</a></p>
+				</div>
+				
+				<div class="col-md-4 mt-3 bg-dark text-white">
+						<br>
+						<h3>Quick Links</h3>
+						<p><a href="index.html" class="text-white">Home</a></p>
+						<p><a href="about.html" class="text-white" >About</a></p>
+						<p><a href="photos.html"class="text-white" >Photos</a></p>
+						<p><a href="contact.html" class="text-white">Contact Us</a></p>
+				</div>
+				<div class="col-md-4 mt-3 bg-dark text-white">
+						<br>
+						<h3> Connect us with</h3>
+						<a href="http://www.facebook.com" target="_blank" ><i class="bi bi-facebook"></i></a>
+						<br>
+						<br>
+						<a href="http://www.instagram.com" target="_blank" ><i class="bi bi-instagram"></i></a>
+						<br>
+						<br>
+						<a href="http://www.telegram.com" target="_blank" ><i class="bi bi-telegram"></i></a>
+						<br>
+						<br>
+						<a href="http://www.linkedin.com" target="_blank" ><i class="bi bi-linkedin"></i></a>
+						<br>
+						<br>
+						<a href="http://www.twitter.com" target="_blank" ><i class="bi bi-twitter"></i></a>
+						<br><br>
+						Copyright © 2022 baliyatra.com . All Rights Reserved.
+				</div><!-------footer ends----------->
+			</div>
+		</div>	
+		<script src="asset/js/bootstrap.min.js"> </script>
+		<script src="asset/js/popper.min.js"> </script>
+	</body>
+</html>				
